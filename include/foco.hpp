@@ -1,3 +1,8 @@
+#pragma once
+#include <iostream>
+
+using namespace std;
+
 class Foco
 {
     private:
@@ -14,5 +19,16 @@ class Foco
     {
        this->encendido = false;
     }
+    void Imprimir()
+    {
+        if(this->encendido)
+        {
+            cout<<"o";
+        }
+        else
+        {
+            cout<<".";
+        }
 
+    }
 };
