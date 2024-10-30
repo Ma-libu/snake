@@ -1,10 +1,10 @@
-#pragma once 
+#pragma once
 #include <Dibujo.hpp>
 
-class Fruta : public Dibujo
+class Fruta
 {
 private:
-    
+
 public:
     Fruta() {}
     ~Fruta() {}

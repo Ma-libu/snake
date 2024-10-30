@@ -1,9 +1,9 @@
-#pragma once
 class Persona
 {
-private:
-    
-public:
+    private:
+
+    public:
+
     Persona() {}
     ~Persona() {}
-};
+}

@@ -1,26 +1,25 @@
-#pragma once 
+#pragma once
 #include <Vector.hpp>
-#include <list>
 #include <SerieNavidad.hpp>
+#include <unistd.h>
 
 class Lienzo
 {
 private:
-Vector posicion;
-Vector tamano;
-
+    Vector posicion; //tener
+    Vector tamano;
 public:
-    Lienzo (Vector p, Vector t) {
-    
-      this->posicion = p;
-      this->tamano = t;
+    Lienzo(Vector p, Vector t) {
+        this -> posicion=p; //sobrecarga de funciones mismo nombre diferente firma pregunta examen
+        this -> tamano=t;
     }
     ~Lienzo() {}
 
-    void Dibujar(SerieNavidad serie){
+    void Dibujar(SerieNavidad serie) //usar
+    {
         serie.Imprimir();
-    }
-    void limpiar(){
-       system("clear");
+    } 
+    void Limpiar(){
+        system("clear");
     }
 };
